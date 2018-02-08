@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>instaCollage</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+<!-- para las imágenes "vacias" -->
+<!--A NUESTROS DIV CONTENEDORES LE DAREMOS UN EVENTOS ONDRAGOVER, QUE OCURRE CUANDO EL ELEMENTO SE ESTA ARRASTRANDO Y EL EVENTO ONDROP, QUE ES EL CUAL PERMITE LA TRANSFERENCIA DE DATOS-->
+  <section class="container-fluid">
+    <div class="row receiver-cont">
+      <div class="vacio-medio-1" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+      <div class="vacio-mayor" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+      <div class="vacio-medio-2" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+    </div>
+  </section>
+  <section class="container-fluid division">
+    <p class="text-center pb">photo booth</p>
+  </section>
+<!-- segunda sección, fotos arrastrables -->
+<!--A TODAS LAS IMAGENES QUE QUERRAMOS MOVER, LE DAREMOS EL ATRIBUTO DRAGGABLE="TRUE", QUE NOS PERMITE QUE ESE ELEMENTO SEA ARRASTRABLE-->
+<!--TAMBIEN EL EVENTO ONDRAGSTART QUE OCURRE CUANDO EL USUARIO COMMIENZA A ARRASTRAR UN ELEMENTO-->
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-xs-4 fotos"><img src="assets/img/foto1.jpg" alt="" class="img-responsive" draggable="true" ondragstart="drag(event)" id="img0"></div>
+      <div class="col-xs-4 fotos"><img src="assets/img/foto1.jpg" alt="" class="img-responsive" draggable="true" ondragstart="drag(event)" id="img1"></div>
+      <div class="col-xs-4 fotos"><img src="assets/img/foto1.jpg" alt="" class="img-responsive" draggable="true" ondragstart="drag(event)" id="img2"></div>
+      <div class="col-xs-4 fotos"><img src="assets/img/foto1.jpg" alt="" class="img-responsive" draggable="true" ondragstart="drag(event)" id="img3"></div>
+      <div class="col-xs-4 fotos"><img src="assets/img/foto1.jpg" alt="" class="img-responsive" draggable="true" ondragstart="drag(event)" id="img4"></div>
+      <div class="col-xs-4 fotos"><img src="assets/img/foto1.jpg" alt="" class="img-responsive" draggable="true" ondragstart="drag(event)" id="img5"></div>
+    </div>
+  </section>
+ <footer class="navbar-fixed-bottom">
+    <div class="container row">
+      <div class="col-xs-4">
+        <p class="footer-text text-center text-selected">CAMERA ROLL <i class="fas fa-chevron-down"></i></p>
+      </div>
+      <div class="col-xs-4">
+        <p class="footer-text text-center">FACES</p>
+      </div>
+      <div class="col-xs-4">
+        <p class="footer-text text-center">RECENT</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

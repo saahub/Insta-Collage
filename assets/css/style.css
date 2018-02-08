@@ -1,0 +1,54 @@
+.vacio-mayor {
+  padding-left: 0.4em;
+  width: 50%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+}
+
+.vacio-medio-1, .vacio-medio-2 {
+  width: 50%;
+  height: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+.vacio-medio-1 {
+  padding-bottom: 0.2em; 
+}
+
+.vacio-medio-2{
+  padding-top: 0.2em;
+}
+.division {
+  height: 2.5em;
+  background: #26272B;
+  padding: 0.5em;
+}
+
+.pb {
+  color: #6097c3;
+  text-transform: uppercase;
+}
+.receiver-cont {
+  height: 15em;
+}
+
+.fotos {
+  background-color: #26272B;
+  padding: 1px;
+  overflow: hidden;
+}
+
+#img0, #img1, #img2, #img3, #img4, #img5 {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+footer{
+  background: #26272B;
+  height: 2.5em;
+  color: #6097c3;
+
+}
